@@ -1,0 +1,23 @@
+<div class="container-own bg-setting style style3">
+  <div class="content opaque-bg">
+    <h2 class="centered-text">Contact us!</h2>
+    <div class="centered-item">
+      <%= flash[:notice] %>
+      <%= form_tag("/static_pages/thank_you") do %>
+        <div class="form-group">
+          <%= label_tag :name %>
+          <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+        </div><!--end form-group-->
+        <div class="form-group">
+          <%= label_tag :email, "Email Address"%>
+          <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email"%>
+        </div><!--end form-group-->
+        <div class="form-group">
+          <%= label_tag :message %>
+          <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message"%>
+        </div><!--end form-group-->
+        <%= submit_tag "Send", class: "btn btn-default" %>
+      <% end %>
+    </div><!--end centered-item-->
+  </div><!--end content-->
+</div><!--end container-->

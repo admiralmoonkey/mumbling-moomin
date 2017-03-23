@@ -1,0 +1,30 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.product-card {
+  width: 22%;
+  margin: 1%;
+  display: inline-block;
+  padding-top: 10px;
+  background-color: white;
+  p {
+    margin: 0;
+    padding-top: 0;
+  }
+}
+
+.style5, .style6 {
+	background-image: image-url('353H.jpg');
+}
+
+.style7 {
+	background-image: image-url('366H.jpg');
+}
+
+@media only screen and (max-width: 800px) {
+  .product-card {
+    display: block;
+    width: 100%;
+    background-color: white;
+  }
+}

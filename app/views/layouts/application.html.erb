@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Valpuri's</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <div class="landing-page bg-setting shadow">
+      <h1 class="hideSmall shop-title" id="shop-title">Valpuri's</h1>
+      <h1 class="showSmall shop-title shadow" id="shop-title">Valpuri's</h1>
+    </div><!--end landing-page-->
+
+    <nav class="navigation shadow" id="navigation-header">
+      <ul id="brand">
+        <li><%= link_to 'Home', root_path %></li>
+      </ul><!--end ul-->
+      <ul id="dropdown">
+        <li class="dropdown"><a href="#"><i class="material-icons">menu</i></a>
+          <ul class="dropdown-content shadow">
+            <li class="form-group">
+              <%= form_tag("/products", method: "get", :class => "navbar-form") do %>
+                <%= label_tag(:q, "Search for", :class=>"label-tag-left") %>
+                <%= text_field_tag(:q, nil, :class => 'form-control')%>
+                <%= submit_tag("Find it!", :class => "btn btn-default") %>
+              <% end %>
+            </li>
+            </li>
+            <li><%= link_to 'Home', static_pages_index_path %></li>
+            <li><%= link_to 'Products', products_path%></li>
+            <li><%= link_to 'About', static_pages_about_path %></li>
+            <li><%= link_to 'Contact', static_pages_contact_path %></li>
+          </ul><!--end ul-->
+      </ul>
+      <ul id="links">
+        <li class="form-group">
+          <%= form_tag("/products", method: "get", :class => "navbar-form") do %>
+            <%= label_tag(:q, "Search for", :class=>"label-tag-left") %>
+            <%= text_field_tag(:q, nil, :class => 'form-control')%>
+            <%= submit_tag("Find it!", :class => "btn btn-default") %>
+          <% end %>
+        </li>
+        <li><%= link_to 'Home', static_pages_index_path %></li>
+        <li class="dropdown"><%= link_to 'Products', products_path %></li>
+        <li><%= link_to 'About', static_pages_about_path %></li>
+        <li><%= link_to 'Contact', static_pages_contact_path %></li>
+      </ul><!--end ul-->
+    </nav>
+
+    <!--dynamic content-->
+
+      <%= yield %>
+      <div class="landing-page bg-setting shadow">
+        <h1 class="hideSmall shop-title" id="shop-title2">Valpuri's</h1>
+        <h1 class="showSmall shop-title" id="shop-title2">Valpuri's</h1>
+      </div><!--end landing-page-->
+    <footer>
+      <p>&copy Satu Asikainen 2017</p>
+    </footer>
+    <!-- Compiled and minified JavaScript -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <!--change navigation bar class and add margin to anchor class"-->
+    <script>
+      $(document).ready(function() {
+        $(window).on('scroll', function() {
+            var scrollTop = $(this).scrollTop();
+
+            $('#navigation-header').each(function() {
+              var topDistance = $(this).offset().top;
+
+              if ((topDistance-60) <= scrollTop ) {
+                  $('#navigation-header').addClass('navigationTop');
+                  $('.content').css('margin-top', '60px')
+                  $('.content').css('margin-bottom', '120px')
+              }
+            });
+        });
+      });
+    </script>
+  </body>
+</html>

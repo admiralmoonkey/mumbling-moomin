@@ -1,0 +1,19 @@
+
+<div class="container-own bg-setting style style6">
+  <div class="content opaque-bg shadow">
+    <p class="centered-text" id="notice"><%= notice %></p>
+    <h2 class="centered-text"><%= @product.name %></h2>
+    <div class="centered-item">
+      <%= image_tag(@product.image_url, alt: "product-image", class: "responsive-img-100") %>
+    </div><!--end product-card-->
+    <p class="centered-text">
+      <strong>Colour: <%= @product.colour %></strong>,
+    </p>
+    <p class="centered-text">
+      <strong><%= @product.price %> €</strong>
+    </p>
+    <p class="centered-text"><%= @product.description %></p>
+    <p class="centered-text"><%= link_to 'Back', products_path %>
+    </p>
+  </div><!--end content-->
+</div><!--end container-->
