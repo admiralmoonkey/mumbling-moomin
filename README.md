@@ -1,5 +1,5 @@
 # README
-
+*
 This Ruby on Rails app is being developed for a Career Foundry Web Developer course.
 
 Things you may want to cover:
