@@ -58,3 +58,5 @@ gem 'coffee-script-source', '1.8.0'
 group :production do
   gem 'pg'
 end
+
+gem 'figaro'
