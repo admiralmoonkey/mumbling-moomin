@@ -60,6 +60,3 @@ gem 'coffee-script-source', '1.8.0'
 group :production do
   gem 'pg'
 end
-
-#heroku_secrets
-gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
