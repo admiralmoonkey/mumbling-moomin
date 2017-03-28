@@ -17,6 +17,11 @@ body {
   margin: 0;
 }
 
+.notice,
+.alert {
+	display: inline-block;
+}
+
 .indicator-container {
 	position: relative;
 	top: 80px;
