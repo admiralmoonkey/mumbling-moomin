@@ -40,6 +40,13 @@
             <li><%= link_to 'Products', products_path%></li>
             <li><%= link_to 'About', static_pages_about_path %></li>
             <li><%= link_to 'Contact', static_pages_contact_path %></li>
+            <li>
+              <% if user_signed_in? %>
+                <%= link_to('Logout', destroy_user_session_path, :method => :delete)%>
+              <% else %>
+                <%= link_to('Login', new_user_session_path) %>
+              <% end %>
+            </li><!--end li-->
           </ul><!--end ul-->
       </ul>
       <ul id="links">
@@ -54,6 +61,13 @@
         <li class="dropdown"><%= link_to 'Products', products_path %></li>
         <li><%= link_to 'About', static_pages_about_path %></li>
         <li><%= link_to 'Contact', static_pages_contact_path %></li>
+        <li>
+          <% if user_signed_in? %>
+            <%= link_to('Logout', destroy_user_session_path, :method => :delete)%>
+          <% else %>
+            <%= link_to('Login', new_user_session_path) %>
+          <% end %>
+        </li><!--end li-->
       </ul><!--end ul-->
     </nav>
 
