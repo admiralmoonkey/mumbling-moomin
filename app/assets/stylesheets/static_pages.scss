@@ -16,7 +16,16 @@ body {
   position: relative;
   margin: 0;
 }
+.content-alert {
+	position: absolute;
+	z-index: 1;
+	top: 100px;
+	left: 50px;
 
+	.alert {
+		display: block;
+	}
+}
 .notice,
 .alert {
 	display: inline-block;
