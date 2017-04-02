@@ -1,19 +1,60 @@
 
 <div class="container-own bg-setting style style6">
-  <div class="content opaque-bg shadow">
-    <p class="centered-text" id="notice"><%= notice %></p>
-    <h2 class="centered-text"><%= @product.name %></h2>
-    <div class="centered-item">
-      <%= image_tag(@product.image_url, alt: "product-image", class: "responsive-img-100") %>
-    </div><!--end product-card-->
-    <p class="centered-text">
-      <strong>Colour: <%= @product.colour %></strong>,
-    </p>
-    <p class="centered-text">
-      <strong><%= @product.price %> €</strong>
-    </p>
-    <p class="centered-text"><%= @product.description %></p>
-    <p class="centered-text"><%= link_to 'Back', products_path %>
-    </p>
+  <div class="content-single-product opaque-bg shadow">
+    <div class="row">
+      <h1 class="centered-text producth1"><%= @product.name %></h1>
+      <div class="col col-xs-12 col-md-6">
+        <%= image_tag(@product.image_url, alt: "product-image", class: "single-product-image") %>
+      </div><!--end col-->
+      <div class="col col-xs-12 col-md-6">
+        <div class="text-col">
+        <h4>Product information</h4>
+        <table>
+          <tr>
+            <td>Color</td>
+            <td><%= @product.colour %></td>
+          </tr>
+          <tr>
+            <td>Price</td>
+            <td><%= @product.price %></td>
+          </tr>
+          <tr>
+            <td>Description</td>
+            <td><%= @product.description %></td>
+          </tr>
+        </table>
+        <h4>Average Rating</h4>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+
+        <h4>Highest Rating Comment</h4>
+        <%= @product.highest_rating_comment %>
+        <p id="notice"><%= notice %></p>
+        </div><!--end text-col-->
+      </div><!--end col-->
+    </div><!--end row-->
+    <div class="row">
+      <div class="col xs-12">
+        <p class="centered-text"><%= link_to 'Back', products_path %></p>
+      </div>
+    </div><!--end row-->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Comment date and writer</h3>
+      </div>
+      <div class="panel-body">
+        Review text goes here...
+      </div>
+      <div class="panel-footer">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+      </div><!--end panel-footer-->
+    </div>
   </div><!--end content-->
 </div><!--end container-->

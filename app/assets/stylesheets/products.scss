@@ -12,7 +12,9 @@
     padding-top: 0;
   }
 }
-
+.producth1 {
+  color: black;
+}
 .style5, .style6 {
 	background-image: image-url('353H.jpg');
 }
@@ -20,7 +22,42 @@
 .style7 {
 	background-image: image-url('366H.jpg');
 }
+.thumbnail {
+    width: 100%;
+    img{
+        // your styles for the image
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
 
+.content-single-product {
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+table {
+  margin-bottom: 40px;
+  td {
+    vertical-align: top;
+    text-align: left;
+  }
+}
+
+.single-product-image {
+  padding: 10px;
+  width: 100%;
+}
+
+.text-col {
+  margin-left: 10px;
+}
+
+h1 {
+  color: black;
+}
 @media only screen and (max-width: 800px) {
   .product-card {
     display: block;
