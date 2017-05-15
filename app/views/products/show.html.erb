@@ -23,11 +23,7 @@
           </tr>
         </table>
         <h4>Average Rating</h4>
-        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-        <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+        <div class="rated" data-score="<%= @product.average_rating %>"></div>
 
         <h4>Highest Rating Comment</h4>
         <% if @product.highest_rating_comment %>
@@ -50,37 +46,15 @@
     <!-- new comment if signed in -->
     <% if signed_in? %>
       <h4>Add a review:</h4>
-      <%= form_for([@product, @product.comments.build]) do |f| %>
-        <p>
-          <%= f.label :body, "Comments" %><br>
+      <p>
+        <%= form_for([@product, @product.comments.build]) do |f| %>
+          <%= f.label :body, "Comments" %>
           <%= f.text_area :body %>
-        </p>
-
-        <p>
           <div class="rating"></div>
-        </p>
-
-        <p>
           <%= f.submit "Submit" %>
-        </p>
-      <% end %>
+        <% end %>
+      </p>
     <% end %>
     <%= render 'comments', product: @product%>
-
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Comment date and writer</h3>
-      </div>
-      <div class="panel-body">
-        Review text goes here...
-      </div>
-      <div class="panel-footer">
-        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-        <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-      </div><!--end panel-footer-->
-    </div>
   </div><!--end content-->
 </div><!--end container-->
