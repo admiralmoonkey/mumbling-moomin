@@ -95,24 +95,5 @@
     <!-- Compiled and minified JavaScript -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  
-    <!--change navigation bar class and add margin to anchor class"-->
-    <script>
-      $(document).ready(function() {
-        $(window).on('scroll', function() {
-            var scrollTop = $(this).scrollTop();
-
-            $('#navigation-header').each(function() {
-              var topDistance = $(this).offset().top;
-
-              if ((topDistance-60) <= scrollTop ) {
-                  $('#navigation-header').addClass('navigationTop');
-                  $('.content').css('margin-top', '60px')
-                  $('.content').css('margin-bottom', '120px')
-              }
-            });
-        });
-      });
-    </script>
   </body>
 </html>
