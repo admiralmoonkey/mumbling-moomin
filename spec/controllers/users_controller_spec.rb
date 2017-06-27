@@ -28,7 +28,7 @@ describe UsersController, type: :controller do
         sign_in user
       end
 
-      it 'redirects to index' do
+      it 'redirects to root' do
         get :show, params: {id: user2.id}
         expect(response).to have_http_status 302
         expect(response).to redirect_to(root_path)
