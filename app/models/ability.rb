@@ -9,7 +9,6 @@ class Ability
     # can :manage, User, id: user.id
     else
       can :create, Comment
-      can :read, [Product, Comment]
       can :manage, User, id: user.id
     end
   end
