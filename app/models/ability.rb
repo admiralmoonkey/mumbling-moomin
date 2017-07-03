@@ -6,7 +6,6 @@ class Ability
 
     if user.admin?
       can :manage, :all
-    end
     # can :manage, User, id: user.id
     else
       can :create, Comment
