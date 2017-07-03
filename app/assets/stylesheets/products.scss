@@ -23,13 +23,16 @@
 	background-image: image-url('366H.jpg');
 }
 .thumbnail {
-    width: 100%;
-    img{
-        // your styles for the image
-        width: 100%;
-        height: auto;
-        display: block;
-    }
+  width: 100%;
+  img {
+      // your styles for the image
+      width: 100%;
+      height: auto;
+      display: block;
+  }
+  h2 {
+    text-align: center;
+  }
 }
 
 .content-single-product {
