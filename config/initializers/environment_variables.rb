@@ -1,5 +1,6 @@
 module EnvironmentVariablesExample
   class Application < Rails::Application
+    if Rails.env.development?
     config.before_configuration do
       env_file = Rails.root.join("config", 'environment_variables.yml').to_s
 
@@ -9,5 +10,6 @@ module EnvironmentVariablesExample
         end # end YAML.load_file
       end # end if File.exists?
     end # end config.before_configuration
+  end
   end # end class
 end # end module
