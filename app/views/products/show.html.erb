@@ -14,8 +14,8 @@
             <td><%= @product.colour %></td>
           </tr>
           <tr>
-            <td>Price</td>
-            <td><%= @product.price %></td>
+            <td>Price </td>
+            <td><%=(number_with_precision(((@product.price.to_d)/100), precision:2))%> €</td>
           </tr>
           <tr>
             <td>Description</td>
@@ -34,6 +34,9 @@
           <%= @product.lowest_rating_comment.body %>
         <% end %>
         <p id="notice"><%= notice %></p>
+        <%= form_tag(url: '/payments/create') do |form| %>
+          <%= render partial: "shared/stripe_checkout_button" %>
+        <% end %>
         </div><!--end text-col-->
       </div><!--end col-->
     </div><!--end row-->
