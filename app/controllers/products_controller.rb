@@ -12,6 +12,7 @@ class ProductsController < ApplicationController
       @products = Product.all
       #show all products
     end
+    logger.debug "#{@products}"
   end
 
   # GET /products/1
@@ -32,6 +33,7 @@ class ProductsController < ApplicationController
   # POST /products
   # POST /products.json
   def create
+    byebug
     respond_to do |format|
       if @product.save
         format.html { redirect_to products_path, notice: 'Product was successfully created.' }
