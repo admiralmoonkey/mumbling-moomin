@@ -26,14 +26,6 @@ class PaymentsController < ApplicationController
       body = e.json_body
       err = body[:error]
       flash[:error] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
-      puts "Status is: #{e.http_status}"
-      puts "Type is: #{err[:type]}"
-      puts "Charge ID is: #{err.[:charge]}"
-      # The following fields are optional
-      puts "Code is: #{err[:code]}" if err[:code]
-      puts "Decline code is: #{err[:decline_code]}" if err[:decline_code]
-      puts "Param is: #{err[:param]}" if err[:param]
-      puts "Message is: #{err[:message]}" if err[:message]
 
     rescue Stripe::RateLimitError => e
     # Too many requests made to the API too quickly
