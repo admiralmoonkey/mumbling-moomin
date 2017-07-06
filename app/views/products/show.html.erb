@@ -34,8 +34,14 @@
           <%= @product.lowest_rating_comment.body %>
         <% end %>
         <p id="notice"><%= notice %></p>
+        <div class="error"></div>
+        <% if signed_in? %>
         <%= form_tag(url: '/payments/create') do |form| %>
+          <%= hidden_field_tag(:product_id, @product.id)%>
           <%= render partial: "shared/stripe_checkout_button" %>
+        <% end %>
+        <% else %>
+          <strong>Please sign in to order and pay with Stripe</strong>
         <% end %>
         </div><!--end text-col-->
       </div><!--end col-->

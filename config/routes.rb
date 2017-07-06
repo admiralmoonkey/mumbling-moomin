@@ -1,5 +1,6 @@
 
 Rails.application.routes.draw do
+  post '/products/:id', to: 'payments#create'
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout'}
   resources :users
   resources :orders, only: [:index, :show, :create, :destroy]
@@ -14,6 +15,7 @@ Rails.application.routes.draw do
   get 'static_pages/index'
 
   post 'static_pages/thank_you'
+
 
   root 'static_pages#landing_page'
   #root 'static_pages#landing_page'
