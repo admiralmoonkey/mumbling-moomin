@@ -30,19 +30,3 @@ $(document).on('turbolinks:load', function(){
       });
   });
 });
-//
-// $(document).ready(function() {
-//   $(window).on('scroll', function() {
-//       var scrollTop = $(this).scrollTop();
-//
-//       $('#navigation-header').each(function() {
-//         var topDistance = $(this).offset().top;
-//
-//         if ((topDistance-60) <= scrollTop ) {
-//             $('#navigation-header').addClass('navigationTop');
-//             $('.content').css('margin-top', '60px')
-//             $('.content').css('margin-bottom', '120px')
-//         }
-//       });
-//   });
-// });

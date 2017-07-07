@@ -54,15 +54,7 @@
 
     <!-- new comment if signed in -->
     <% if signed_in? %>
-      <h4>Add a review:</h4>
-      <p>
-        <%= form_for([@product, @product.comments.build]) do |f| %>
-          <%= f.label :body, "Comments" %>
-          <%= f.text_area :body, :class => 'form-control' %>
-          <div class="rating"></div>
-          <%= f.submit "Submit", :class => "btn btn-default" %>
-        <% end %>
-      </p>
+      <%= render partial: "new_comment"%>
     <% end %>
     <%= render 'comments', product: @product%>
   </div><!--end content-->
