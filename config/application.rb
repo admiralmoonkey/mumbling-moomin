@@ -12,7 +12,6 @@ module MumblingMoomin
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
-    config.force_ssl = true
     config.assets.initialize_on_precompile = false
     config.filter_parameters << :password
 

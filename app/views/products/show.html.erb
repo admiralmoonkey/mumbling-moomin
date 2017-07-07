@@ -1,6 +1,7 @@
 <div class="container-own bg-setting style style6">
   <div class="content-single-product opaque-bg shadow">
     <div class="row">
+      <% cache @product do %>
       <h1 class="centered-text producth1"><%= @product.name %></h1>
       <div class="col col-xs-12 col-md-6">
         <%= image_tag(@product.image_url, alt: "product-image", width:"100%", class: "single-product-image img-zoom", data_zoom_image:"#{@product.image_url}") %>
@@ -32,6 +33,7 @@
         <h4>Lowest Rating Comment</h4>
         <% if @product.lowest_rating_comment %>
           <%= @product.lowest_rating_comment.body %>
+        <% end %>
         <% end %>
         <p id="notice"><%= notice %></p>
         <div class="error"></div>
