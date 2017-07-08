@@ -61,6 +61,11 @@
     <% if signed_in? %>
       <%= render partial: "new_comment"%>
     <% end %>
+
+    <!-- alerts if new comments -->
+    <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
+
+    <!--renders all comments from current product -->
     <%= render 'comments', product: @product%>
   </div><!--end content-->
 </div><!--end container-->

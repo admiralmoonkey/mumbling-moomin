@@ -96,4 +96,6 @@ Rails.application.configure do
                      :socket_failure_delay => 0.2,
                      :down_retry_delay => 60
                     }
+  config.web_socket_server_url = "wss://valpuris-printshop.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://valpuris-printshop.herokuapp.com', 'http://valpuris-printshop.herokuapp.com']                    
 end
