@@ -1,6 +1,6 @@
 <div class="container-own bg-setting style style6">
   <div class="content-single-product opaque-bg shadow">
-    <div class="row">
+    <div class="row" data-product-id="<%= @product.id %>">
       <% cache @product do %>
         <h1 class="centered-text producth1"><%= @product.name %></h1>
         <div class="col col-xs-12 col-md-6">

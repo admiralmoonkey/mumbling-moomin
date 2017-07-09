@@ -12,9 +12,9 @@ module MumblingMoomin
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
-    if Rails.env.production?
-      config.force_ssl = true
-    end
+    # if Rails.env.production?
+    #   config.force_ssl = true
+    # end
     config.assets.initialize_on_precompile = false
     config.filter_parameters << :password
     config.cache_store = :redis_store, 'redis://localhost:6379/0/cache'
