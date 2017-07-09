@@ -1,3 +1,9 @@
+//app/assets/javascripts/channels/product.js
+
+//= require cable
+//= require_self
+//= require_tree .
+
 App.product = App.cable.subscriptions.create("ProductChannel", {
   connected: function() {
     // Called when the subscription is ready for use on the server
