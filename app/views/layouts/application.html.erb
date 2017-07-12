@@ -5,7 +5,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Anton|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Roboto|Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -28,12 +28,8 @@
         </div>
       <% end %>
     </div><!--end content-alert-->
-    <div class="landing-page bg-setting shadow">
-      <h1 class="hideSmall shop-title" id="shop-title">Valpuri's</h1>
-      <h1 class="showSmall shop-title shadow" id="shop-title">Valpuri's</h1>
-    </div><!--end landing-page-->
 
-    <nav class="navigation shadow" id="navigation-header">
+    <nav class="navigation navigationTop shadow" id="navigation-header">
       <ul id="brand">
         <li><%= link_to 'Home', root_path %></li>
       </ul><!--end ul-->
@@ -48,8 +44,7 @@
               <% end %>
             </li>
             </li>
-            <li><%= link_to 'Home', static_pages_index_path %></li>
-            <li><%= link_to 'Products', products_path%></li>
+            <li><%= link_to 'Products', products_path %></li>
             <li><%= link_to 'About', static_pages_about_path %></li>
             <li><%= link_to 'Contact', static_pages_contact_path %></li>
             <li>
@@ -64,12 +59,11 @@
       <ul id="links">
         <li class="form-group">
           <%= form_tag("/products", method: "get", :class => "navbar-form") do %>
-            <%= label_tag(:q, "Search for", :class=>"label-tag-left") %>
+            <p class="tiny"><%= label_tag(:q, "Search for", :class=>"label-tag-left") %></p>
             <%= text_field_tag(:q, nil, :class => 'form-control')%>
             <%= submit_tag("Find it!", :class => "btn btn-default") %>
           <% end %>
         </li>
-        <li><%= link_to 'Home', static_pages_index_path %></li>
         <li class="dropdown"><%= link_to 'Products', products_path %></li>
         <li><%= link_to 'About', static_pages_about_path %></li>
         <li><%= link_to 'Contact', static_pages_contact_path %></li>
@@ -84,13 +78,13 @@
     </nav>
 
     <!--dynamic content-->
-    <%= yield %>
+      <%= yield %>
 
-    
     <div class="landing-page bg-setting shadow">
       <h1 class="hideSmall shop-title" id="shop-title2">Valpuri's</h1>
       <h1 class="showSmall shop-title" id="shop-title2">Valpuri's</h1>
     </div><!--end landing-page-->
+
     <footer>
       <p>&copy Satu Asikainen 2017</p>
     </footer>

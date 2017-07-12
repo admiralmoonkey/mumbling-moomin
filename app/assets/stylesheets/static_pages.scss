@@ -16,6 +16,7 @@ body {
   position: relative;
   margin: 0;
 }
+
 .content-alert {
 	position: absolute;
 	z-index: 1;
@@ -41,11 +42,11 @@ body {
 }
 
 .carousel-caption {
-	top: 45%;
+	bottom: -4%;
 }
 
 .container-own {
-  padding-top: 60px;
+  padding-top: 100px;
   padding-bottom: 120px;
   min-height: 100vh;
 }
@@ -53,7 +54,12 @@ body {
 .content {
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px 10px;
+
+	p {
+		margin: 20px 0px;
+		padding: 0px 10px;
+	}
 }
 
 .shop-title {
@@ -119,7 +125,6 @@ ul {
 
   p {
     margin: 0;
-    text-align: center;
   }
 }
 
@@ -218,12 +223,22 @@ h1 {
 
 p,
 a,
-h2 {
-  font-family: 'Roboto', sans-serif;
+h2,
+td {
+  font-family: 'Quicksand', sans-serif;
 }
 
 h2 {
+	font-size: 1.8em;
+}
+
+p {
 	font-size: 1.5em;
+}
+
+.tiny {
+	font-size: 1em;
+	display: inline;
 }
 
 .centered-text {
@@ -262,6 +277,7 @@ body {
 
 .opaque-bg {
 	background-color: rgba(255,255,255, 0.8);
+	border-radius: 20px;
 }
 
 #shop-title {

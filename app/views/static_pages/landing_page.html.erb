@@ -1,14 +1,45 @@
+<div class="landing-page bg-setting shadow">
+  <h1 class="hideSmall shop-title" id="shop-title">Valpuri's</h1>
+  <h1 class="showSmall shop-title shadow" id="shop-title">Valpuri's</h1>
+</div><!--end landing-page top image splash-->
+
 <div class="container-own style2">
+
+  <!-- begin landing page text-->
+  <div class="content opaque-bg shadow">
+    <p class="centered-text">
+      <strong>Hi there!</strong>
+    </p>
+    <p>
+      Welcome to Valpuri's! This is the place for the goofiest and most colourful designs.
+    </p>
+    <p>
+      Our collection has several designs that can be either purchased as paper prints in
+      several sizes or as t-shirt or bag designs.
+
+    </p>
+    <p>
+      Please stroll around and find out the items
+      that suit your needs...
+    </p>
+    <p>
+      Best wishes,<br>
+      Valpuri
+    </p>
+  </div><!--end content-->
+  <!-- end landing-page text-->
+
+  <!--begin image-carousel-->
   <div class="content">
-    <h1>Featured Products</h1>
+    <h1>Featured Designs</h1>
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <% @products.each do |product| %>
             <div class="item<%= " active" if product == @products.first %>">
-              <%= image_tag(product.image_url, :class => 'carousel-image') %>
+              <%= link_to image_tag(product.image_url, :class => 'carousel-image'), product%>
             <div class="carousel-caption">
-              <%= product.name%>
+              <h2><%= product.name%></h2>
             </div>
               </div>
           <% end %>
@@ -33,4 +64,5 @@
       </a>
     </div>
   </div><!--end content-->
+
 </div><!--end container-->

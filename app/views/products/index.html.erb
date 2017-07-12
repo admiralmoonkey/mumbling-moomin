@@ -1,13 +1,15 @@
 <div class="container-fluid container-own bg-setting style style5">
   <div class="content-single-product">
-  <p id="notice"><%= notice %></p>
-  <div class="row">
-    <% cache (cache_key_for_products) do %>
-      <%= render @products %>
+    <p id="notice"><%= notice %></p>
+    <div class="row">
+      <% cache (cache_key_for_products) do %>
+        <%= render @products %>
+      <% end %>
+    </div><!--end row-->
+    <% if current_user && current_user.admin? %>
+      <p class="centered-text">
+        <%= link_to 'New Product', new_product_path %>
+      </p>
     <% end %>
-  </div><!--end row-->
-  <p class="centered-text">
-    <%= link_to 'New Product', new_product_path %>
-  </p>
-</div>
+  </div>
 </div><!--end container-->
