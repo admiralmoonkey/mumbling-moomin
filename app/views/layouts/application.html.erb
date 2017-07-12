@@ -38,7 +38,7 @@
           <ul class="dropdown-content shadow">
             <li class="form-group">
               <%= form_tag("/products", method: "get", :class => "navbar-form") do %>
-                <%= label_tag(:q, "Search for", :class=> "label-tag-left") %>
+                <p id="tiny>"<%= label_tag(:q, "Search for", :class=> "label-tag-left") %></p>
                 <%= text_field_tag(:q, nil, :class => 'form-control')%>
                 <%= submit_tag("Find it!", :class => "btn btn-default") %>
               <% end %>

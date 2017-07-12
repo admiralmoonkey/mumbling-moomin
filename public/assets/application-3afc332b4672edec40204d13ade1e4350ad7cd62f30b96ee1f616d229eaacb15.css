@@ -1,0 +1,710 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 9, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/payments.scss */
+a {
+  text-align: center;
+}
+/* line 4, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/products.scss */
+.product-card {
+  width: 22%;
+  margin: 1%;
+  display: inline-block;
+  padding-top: 10px;
+  background-color: white;
+}
+/* line 10, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/products.scss */
+.product-card p {
+  margin: 0;
+  padding-top: 0;
+}
+
+/* line 15, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/products.scss */
+.product {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 20, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/products.scss */
+.product-p {
+  font-size: 1em;
+}
+
+/* line 24, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/products.scss */
+.producth1 {
+  color: black;
+}
+
+/* line 27, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/products.scss */
+.style5, .style6 {
+  background-image: url(/assets/353H-32c683f580590dbf90bb2c8322edcbb1f9c34caf0206bc6b352cd6e1df5af413.jpg);
+}
+
+/* line 31, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/products.scss */
+.style7 {
+  background-image: url(/assets/366H-b6401b5d2fcdaadf9c1b20d7c17930a1749ecbc7bcd1001d5b8b478afe5b04df.jpg);
+}
+
+/* line 34, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/products.scss */
+.thumbnail {
+  width: 100%;
+}
+/* line 36, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/products.scss */
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* line 42, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/products.scss */
+.thumbnail h2 {
+  text-align: center;
+  font-size: 1.2em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 51, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/products.scss */
+.content-single-product {
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* line 57, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/products.scss */
+table {
+  margin-bottom: 40px;
+}
+/* line 59, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/products.scss */
+table td {
+  vertical-align: top;
+  text-align: left;
+}
+
+/* line 65, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/products.scss */
+.single-product-image {
+  padding: 10px;
+}
+
+/* line 69, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/products.scss */
+.text-col {
+  margin-left: 10px;
+}
+
+/* line 73, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/products.scss */
+h1 {
+  color: black;
+}
+
+@media only screen and (max-width: 800px) {
+  /* line 77, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/products.scss */
+  .product-card {
+    display: block;
+    width: 100%;
+    background-color: white;
+  }
+}
+/* line 1, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 10, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/scaffolds.scss */
+ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 17, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 26, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 30, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 36, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 40, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 47, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 52, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 56, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 62, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 70, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 81, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 87, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 11, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 15, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+body {
+  position: relative;
+  margin: 0;
+}
+
+/* line 20, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.content-alert {
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  left: 50px;
+}
+/* line 26, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.content-alert .alert {
+  display: block;
+}
+
+/* line 30, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.notice,
+.alert {
+  display: inline-block;
+}
+
+/* line 35, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.indicator-container {
+  position: relative;
+  top: 80px;
+}
+
+/* line 40, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.carousel-image {
+  margin: 0 auto;
+}
+
+/* line 44, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.carousel-caption {
+  bottom: -4%;
+}
+
+/* line 48, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.container-own {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  min-height: 100vh;
+}
+
+/* line 54, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.content {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+/* line 59, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.content p {
+  margin: 20px 0px;
+  padding: 0px 10px;
+}
+
+/* line 65, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.shop-title {
+  position: relative;
+  top: 50vh;
+}
+
+/* line 70, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.landing-page {
+  display: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+/* line 76, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.centered-item {
+  width: 33%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 82, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.responsive-img-50 {
+  max-width: 50%;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+/* line 88, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.responsive-img-100 {
+  width: 100%;
+}
+
+/* line 92, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+footer {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+}
+
+/* line 101, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.hideSmall {
+  display: none;
+}
+
+/* line 105, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.showSmall {
+  display: inline;
+}
+
+/* line 109, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+ul {
+  margin: 0;
+  padding: 10px 0px;
+}
+
+/* line 114, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.form label {
+  display: inline-block;
+}
+
+/* line 119, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.navigation {
+  position: relative;
+  left: 0;
+  background-color: #cc3755;
+  width: 100%;
+  height: 60px;
+}
+/* line 126, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.navigation p {
+  margin: 0;
+}
+
+/* line 131, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.navigationTop {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+/* line 138, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.navigation #links {
+  float: right;
+}
+/* line 141, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.navigation #brand {
+  float: left;
+}
+/* line 144, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.navigation #dropdown {
+  float: right;
+}
+/* line 148, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.navigation #links, .navigation #brand {
+  display: inline-block;
+}
+/* line 153, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.navigation #links li, .navigation #brand li, .navigation #dropdown li {
+  padding: 10px;
+  list-style: none;
+}
+/* line 158, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.navigation #links .form-group, .navigation #brand .form-group, .navigation #dropdown .form-group {
+  padding: 0px;
+}
+/* line 162, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.navigation #links #links li,
+.navigation #links #brand li, .navigation #brand #links li,
+.navigation #brand #brand li, .navigation #dropdown #links li,
+.navigation #dropdown #brand li {
+  float: left;
+}
+/* line 168, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.navigation #brand, .navigation #dropdown {
+  position: relative;
+  margin: 0;
+  padding: 10px 0px;
+}
+/* line 174, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.navigation #links {
+  position: relative;
+  margin: 0;
+  padding: 5px 0px;
+}
+/* line 180, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.navigation .label-tag-left {
+  float: left;
+  padding: 7px;
+  color: white;
+  font-weight: 100;
+}
+/* line 187, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.navigation a, .navigation a:visited {
+  color: white;
+  text-decoration: none;
+}
+/* line 192, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.navigation a:hover {
+  background-color: inherit;
+  font-size: 1.2em;
+}
+
+/* line 198, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  background-color: #2ab1cc;
+  z-index: 1;
+  padding: 10px;
+  min-width: 160px;
+}
+/* line 207, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.dropdown-content li {
+  margin: 0;
+}
+
+/* line 212, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* line 217, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+h1 {
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+/* line 224, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+p,
+a,
+h2,
+td {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* line 231, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+h2 {
+  font-size: 1.8em;
+}
+
+/* line 235, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+p {
+  font-size: 1.5em;
+}
+
+/* line 239, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+#tiny {
+  font-size: 1em;
+  display: inline;
+}
+
+/* line 244, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.centered-text {
+  text-align: center;
+}
+
+/* line 248, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+footer {
+  text-align: center;
+  color: white;
+}
+/* line 251, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+footer p {
+  margin: 0;
+  padding: 20px;
+}
+
+/* line 257, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+#shop-title2 {
+  color: #cc3755;
+}
+
+/* line 261, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.hideSmall {
+  font-size: 10em;
+}
+
+/* line 265, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.showSmall {
+  font-size: 5em;
+}
+
+/* line 270, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+body {
+  background-color: #2ab1cc;
+}
+
+/* line 274, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.shadow {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* line 278, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.opaque-bg {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+}
+
+/* line 283, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+#shop-title {
+  background-color: #2ab1cc;
+}
+
+/* line 287, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+#shop-title2 {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* line 291, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+footer {
+  background-color: #cc3755;
+}
+
+/* line 295, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+li {
+  list-style: none;
+  text-align: center;
+}
+
+/* line 300, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.carousel-control.right,
+.carousel-control.right a,
+.carousel-control.left,
+.carousel-control.left a {
+  background-image: none;
+  background-color: transparent;
+}
+
+/* line 308, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.bg-setting {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* line 313, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.landing-page {
+  background-image: url(/assets/156H-6dff51f2a567c18918760d1b896f1b4754aa6f07cc82c88ebc7f4c565179f712.jpg);
+}
+
+/* line 316, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.style2 {
+  background-image: url(/assets/330H-376dcdf0c7b282dc4cde92b26c37644e5e296634170f3ce4a801d3d62b24f15a.jpg);
+}
+
+/* line 319, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.style3 {
+  background-image: url(/assets/385H-2008b54813797a49d7d9f36199a8a7a21ebb067d8166bbd42e7ba19c8e9f185c.jpg);
+}
+
+/* line 323, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.style4 {
+  background-image: url(/assets/353H-32c683f580590dbf90bb2c8322edcbb1f9c34caf0206bc6b352cd6e1df5af413.jpg);
+}
+
+/* line 327, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+.style6 {
+  background-image: url(/assets/332H-b4fc2c9a106142a4a930c73f811bbc79672e6779caa8d9466439476fff84cf58.jpg);
+}
+
+@media only screen and (max-width: 771px) {
+  /* line 332, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+  #links li {
+    display: none;
+  }
+
+  /* line 336, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+  .navigation .label-tag-left {
+    text-align: center;
+    float: none;
+  }
+
+  /* line 341, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+  #dropdown {
+    display: inline-block;
+  }
+
+  /* line 345, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+  .shop-title {
+    min-width: 90%;
+    margin: 0 auto;
+    padding: 35px;
+  }
+
+  /* line 351, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+  .showSmall {
+    display: block;
+  }
+}
+@media (min-width: 772px) {
+  /* line 357, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+  #links li {
+    display: inline-block;
+  }
+
+  /* line 361, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+  #dropdown {
+    display: none;
+  }
+
+  /* line 365, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+  .hideSmall {
+    display: inline;
+  }
+
+  /* line 369, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+  .showSmall {
+    display: none;
+  }
+
+  /* line 373, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+  .shop-title {
+    padding: 50px;
+    margin: 0px 10px;
+  }
+
+  /* line 378, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+  #shop-title {
+    left: 10px;
+    padding: 50px;
+  }
+
+  /* line 383, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/static_pages.scss */
+  #shop-title2 {
+    float: right;
+  }
+}
+/* line 4, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/users.scss */
+.content {
+  width: 30%;
+}
+
+/* line 7, /home/satu/Documents/WebDev/mumbling-moomin/app/assets/stylesheets/users.scss */
+.btn-lg {
+  margin: 0 auto;
+  background-color: orange;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
