@@ -5,7 +5,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Anton|Roboto|Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -38,7 +38,7 @@
           <ul class="dropdown-content shadow">
             <li class="form-group">
               <%= form_tag("/products", method: "get", :class => "navbar-form") do %>
-                <%= label_tag(:q, "Search for", :class=>"label-tag-left") %>
+                <%= label_tag(:q, "Search for", :class=> "label-tag-left") %>
                 <%= text_field_tag(:q, nil, :class => 'form-control')%>
                 <%= submit_tag("Find it!", :class => "btn btn-default") %>
               <% end %>
