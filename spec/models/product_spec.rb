@@ -3,8 +3,6 @@ require 'rails_helper'
 describe Product do
   # METHOD TESTS
   context "average rating returns correct value" do
-    # let(:product) {Product.create!(name: "race bike", description:"super fancy bike", image_url: "justus.jpg", price: 500, colour:  "white")}
-    # let(:user) {User.create!(email: "john@email.com", password: "password123")}
     let(:user) {@user = FactoryGirl.create(:user)}
     let(:product) {@product = FactoryGirl.create(:product)}
 
@@ -48,18 +46,6 @@ describe Product do
       expect(product.lowest_rating_comment.rating).to eq 1
     end
   end
-
-  context "views return correct value" do
-    let(:product) {@product = FactoryGirl.create(:product, id: 600)}
-    it "views returns nil views" do
-      expect(product.views).to eq nil
-    end
-
-    it "viewed! returns 1 vies" do
-      expect(product.viewed!).to eq 1
-    end
-  end
-
 
   #VALIDATIONS TESTS
   context "is created without a name" do

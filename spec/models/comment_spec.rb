@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 describe Comment do
+  #VALIDATION TESTS
   context "is made without body" do
     it "returns not valid" do
       # expect(Comment.new(user_id: 1, product_id: 1, rating: 1, )).not_to be_valid
