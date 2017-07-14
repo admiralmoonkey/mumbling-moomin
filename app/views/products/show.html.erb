@@ -58,13 +58,10 @@
           <% else %>
             <p><strong>Please sign in to order and pay with Stripe</strong></p>
           <% end %>
+          <br><br>
+          <p><%= link_to 'Back', products_path %></p>
         </div><!--end text-col-->
       </div><!--end col-->
-    </div><!--end row-->
-    <div class="row">
-      <div class="col xs-12">
-        <p class="centered-text"><%= link_to 'Back', products_path %></p>
-      </div>
     </div><!--end row-->
 
     <!-- new comment if signed in -->
