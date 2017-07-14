@@ -3,6 +3,5 @@ class OrderMailer < ApplicationMailer
     @user = user
     @product = product
     mail( :to => user.email, :subject => "Order confirmation").deliver_now
-    
   end
 end
