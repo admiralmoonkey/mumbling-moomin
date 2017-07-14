@@ -16,10 +16,4 @@ class OrdersController < ApplicationController
 
   def Destroy
   end
-
-  def new_order
-    @user = user
-    @product = product
-    mail( :to => user.email, :subject => "Order confirmation").deliver_now
-  end
 end

@@ -7,4 +7,11 @@ class UserMailer < ApplicationMailer
         :to => 'admiralmoonkey@gmail.com',
         :subject => "A new contact form message from #{name}")
   end
+
+  def success_order(user, product)
+    @user = user
+    @product = product
+    mail(:to => user.email,
+        :subject => "Confirmation of payment #{product.name}")
+  end
 end
