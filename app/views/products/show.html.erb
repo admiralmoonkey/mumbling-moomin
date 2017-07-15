@@ -1,7 +1,7 @@
 <div class="container-own bg-setting style style6">
   <div class="content-single-product opaque-bg shadow">
     <div class="row" data-product-id="<%= @product.id %>">
-      <% cache @product do %>
+      <!-- <% cache @product do %> -->
         <h1 class="centered-text producth1">
           <%= @product.name %>
         </h1>
@@ -43,7 +43,7 @@
                 <%= @product.lowest_rating_comment.body %>
               </p>
             <% end %>
-          <% end %>
+          <!-- <% end %> -->
 
           <h2>Product views:
             <span class="badge"><%= @product.views%></span>
@@ -71,7 +71,6 @@
 
     <!-- alerts if new comments -->
     <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
-
     <!--renders all comments from current product -->
     <%= render 'comments', product: @product%>
   </div><!--end content-->
