@@ -1,9 +1,9 @@
 development:
-  adapter: redis
+  adapter: async
 
 test:
   adapter: async
 
 production:
-  adapter: postgresql
-  url: postgres://pavabilikmzyse:fa3b251866ce8e6a78926614818f6bd7a11379a8f8d7a9f8c329d1cd3f2c7b2b@ec2-107-20-191-76.compute-1.amazonaws.com:5432/daenqg5pi5j2c2
+  adapter: redis
+  url: redis://h:p9eb1748dbcfded7a288c1c980ba01ca9a915b304c21e99ceab9f5cbb0119b938@ec2-34-225-146-66.compute-1.amazonaws.com:36389

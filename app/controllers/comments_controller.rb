@@ -1,9 +1,9 @@
 class CommentsController < ApplicationController
-  before_action :authenticate_user!, except: [:show, :index]
+  # before_action :authenticate_user!, except: [:show, :index]
   load_and_authorize_resource
 
   def create
-    @user = current_user
+    # @user = current_user
     @product = Product.find(params[:product_id])
     @comment = @product.comments.new(comment_params)
     @comment.user = current_user

@@ -66,7 +66,9 @@
 
     <!-- new comment if signed in -->
     <% if signed_in? %>
+    <div data-turbolinks: true>
       <%= render partial: "new_comment"%>
+    </div>
     <% end %>
 
     <!-- alerts if new comments -->

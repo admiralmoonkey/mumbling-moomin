@@ -1,6 +1,5 @@
 var refreshRating = function(){
   $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
-
   $('.rated').raty({ path: '/assets',
     readOnly: true,
     score: function() {
@@ -8,10 +7,8 @@ var refreshRating = function(){
     }
   });
 };
-
-$(document).on('turbolinks:load ajaxSuccess', function(){
-  refreshRating();
-
+// $(document).on('turbolinks:load ajaxSuccess', function(){
+$(document).on('turbolinks:load ajaxSuccess', function () {
   $('.img-zoom').elevateZoom({
       zoomWindowFadeIn: 500,
       zoomWindowFadeOut: 500,
@@ -33,4 +30,5 @@ $(document).on('turbolinks:load ajaxSuccess', function(){
   //       }
   //     });
   // });
+    refreshRating();
 });

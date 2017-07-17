@@ -1,11 +1,7 @@
 Rails.application.configure do
-  config.log_level = :warn
   # Settings specified here will take precedence over those in config/application.rb.
-
   # Code is not reloaded between requests.
   config.cache_classes = true
-
-
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
@@ -97,5 +93,5 @@ Rails.application.configure do
                      :down_retry_delay => 60
                     }
   config.web_socket_server_url = "wss://valpuris-printshop.herokuapp.com/cable"
-  config.action_cable.allowed_request_origins = ['https://valpuris-printshop.herokuapp.com', 'http://valpuris-printshop.herokuapp.com']                    
+  config.action_cable.allowed_request_origins = ['https://valpuris-printshop.herokuapp.com', 'http://valpuris-printshop.herokuapp.com']
 end

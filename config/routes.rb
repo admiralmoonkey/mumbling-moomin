@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  mount ActionCable.server => '/cable'
-
   post '/products/:id', to: 'payments#create'
 
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout'}
@@ -22,4 +20,5 @@ Rails.application.routes.draw do
   root 'static_pages#landing_page'
   #root 'static_pages#landing_page'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  mount ActionCable.server => '/cable'
 end
