@@ -15,7 +15,7 @@ group :development, :test do
   gem "factory_girl_rails", "~> 4.0"
 end
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 3.6'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -79,3 +79,5 @@ gem "brakeman", :require => false
 gem 'dalli'
 
 gem 'redis-rails'
+
+gem 'sidekiq'
